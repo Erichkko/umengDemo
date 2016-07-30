@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <UMSocial.h>
 
-@interface ViewController ()
+
+@interface ViewController ()<UMSocialUIDelegate>
 
 @end
 
@@ -16,12 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)shareClick:(id)sender {
+    NSString *appKey = @"579c5b0867e58e3458000787";
+    NSString *shareContent = @"友盟社会化分享让您快速实现分享等社会化功能，http://umeng.com/social";
+    UIImage *shareImage = [UIImage imageNamed:@"xingxing"];
+    NSArray *snsArray  = @[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone,UMShareToDouban,UMShareToEmail,UMShareToFacebook];
+    
+    [UMSocialData defaultData].extConfig.title = @"分享的title";
+    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:appKey
+                                      shareText:shareContent
+                                     shareImage:shareImage
+                                shareToSnsNames:snsArray
+                                       delegate:self];
 }
+#pragma mark - UMSocialUIDelegate
 
 @end

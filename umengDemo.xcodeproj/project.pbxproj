@@ -13,9 +13,15 @@
 		FE95AE0F1D4C93490025650C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE95AE0D1D4C93490025650C /* Main.storyboard */; };
 		FE95AE111D4C93490025650C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE95AE101D4C93490025650C /* Assets.xcassets */; };
 		FE95AE141D4C93490025650C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE95AE121D4C93490025650C /* LaunchScreen.storyboard */; };
+		FE95AE1C1D4C9F890025650C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95AE1B1D4C9F890025650C /* Security.framework */; };
+		FE95AE1E1D4C9FEB0025650C /* libPods-umengDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95AE1D1D4C9FEB0025650C /* libPods-umengDemo.a */; };
+		FE95AE201D4C9FFE0025650C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95AE1F1D4C9FFE0025650C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220B0ECB1F12305E2DC78FB3 /* Pods-umengDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umengDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-umengDemo/Pods-umengDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3086FBD97ED0BD2084CB1B17 /* libPods-umengDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-umengDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		915EEE8636B2DD3E103550E9 /* Pods-umengDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umengDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-umengDemo/Pods-umengDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE95AE011D4C93480025650C /* umengDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umengDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE95AE051D4C93490025650C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE95AE071D4C93490025650C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,9 @@
 		FE95AE101D4C93490025650C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE95AE131D4C93490025650C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE95AE151D4C93490025650C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE95AE1B1D4C9F890025650C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE95AE1D1D4C9FEB0025650C /* libPods-umengDemo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-umengDemo.a"; path = "Pods/../build/Debug-iphoneos/libPods-umengDemo.a"; sourceTree = "<group>"; };
+		FE95AE1F1D4C9FFE0025650C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE95AE201D4C9FFE0025650C /* SystemConfiguration.framework in Frameworks */,
+				FE95AE1E1D4C9FEB0025650C /* libPods-umengDemo.a in Frameworks */,
+				FE95AE1C1D4C9F890025650C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F090D305496BE597471C9A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				220B0ECB1F12305E2DC78FB3 /* Pods-umengDemo.debug.xcconfig */,
+				915EEE8636B2DD3E103550E9 /* Pods-umengDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDFD49933653B9EA306B301A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE95AE1F1D4C9FFE0025650C /* SystemConfiguration.framework */,
+				FE95AE1D1D4C9FEB0025650C /* libPods-umengDemo.a */,
+				FE95AE1B1D4C9F890025650C /* Security.framework */,
+				3086FBD97ED0BD2084CB1B17 /* libPods-umengDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE95ADF81D4C93480025650C = {
 			isa = PBXGroup;
 			children = (
 				FE95AE031D4C93490025650C /* umengDemo */,
 				FE95AE021D4C93480025650C /* Products */,
+				7F090D305496BE597471C9A6 /* Pods */,
+				CDFD49933653B9EA306B301A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE95AE181D4C93490025650C /* Build configuration list for PBXNativeTarget "umengDemo" */;
 			buildPhases = (
+				E8C38970FD268D8A3B0E16E2 /* [CP] Check Pods Manifest.lock */,
 				FE95ADFD1D4C93480025650C /* Sources */,
 				FE95ADFE1D4C93480025650C /* Frameworks */,
 				FE95ADFF1D4C93480025650C /* Resources */,
+				F43F37F4B0923756AB9078CF /* [CP] Embed Pods Frameworks */,
+				D33C27245F8101D3AE39E8B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +181,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D33C27245F8101D3AE39E8B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-umengDemo/Pods-umengDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C38970FD268D8A3B0E16E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F43F37F4B0923756AB9078CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-umengDemo/Pods-umengDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE95ADFD1D4C93480025650C /* Sources */ = {
@@ -262,10 +347,15 @@
 		};
 		FE95AE191D4C93490025650C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220B0ECB1F12305E2DC78FB3 /* Pods-umengDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = umengDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.umengDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -274,10 +364,15 @@
 		};
 		FE95AE1A1D4C93490025650C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915EEE8636B2DD3E103550E9 /* Pods-umengDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = umengDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.umengDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -303,6 +398,7 @@
 				FE95AE1A1D4C93490025650C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

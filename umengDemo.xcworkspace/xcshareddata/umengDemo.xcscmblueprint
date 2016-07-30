@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7F66333B469B044D0311BAB3C19431E224D40FCB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "65D6DB69FC84550EA0B40BE6508B97475483A876" : 0,
+    "7F66333B469B044D0311BAB3C19431E224D40FCB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "14F2A457-B53F-4B40-B304-62E4371BCBBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "65D6DB69FC84550EA0B40BE6508B97475483A876" : "",
+    "7F66333B469B044D0311BAB3C19431E224D40FCB" : "umengDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "umengDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "umengDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erichkko\/PinterestLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65D6DB69FC84550EA0B40BE6508B97475483A876"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erichkko\/umengDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F66333B469B044D0311BAB3C19431E224D40FCB"
+    }
+  ]
+}
